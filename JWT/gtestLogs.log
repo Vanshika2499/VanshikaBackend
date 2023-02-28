@@ -1,0 +1,51 @@
+2023-02-27 00:56:39,491 [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(112)-127.0.0.1] Application shutdown requested.
+2023-02-27 00:56:39,923 [INFO] org.apache.catalina.core.StandardService [RMI TCP Connection(112)-127.0.0.1] Stopping service [Tomcat]
+2023-02-27 00:56:39,979 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(112)-127.0.0.1] The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-02-27 00:56:40,046 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(112)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 00:56:40,116 [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(112)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-02-27 00:56:40,179 [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(112)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2023-02-27 00:56:44,295 [INFO] com.jwt.JwtApplication [main] Starting JwtApplication using Java 17.0.4.1 on lin80023095 with PID 18720 (C:\Users\V122\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\OnlineElectronicStore\JWT\target\classes started by v122 in C:\Users\V122\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\OnlineElectronicStore\JWT)
+2023-02-27 00:56:44,297 [INFO] com.jwt.JwtApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-27 00:56:45,151 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 00:56:45,292 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 119 ms. Found 2 JPA repository interfaces.
+2023-02-27 00:56:46,153 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-02-27 00:56:46,166 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-02-27 00:56:46,166 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-27 00:56:46,289 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-02-27 00:56:46,289 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1935 ms
+2023-02-27 00:56:46,341 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-27 00:56:46,458 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-27 00:56:46,556 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-02-27 00:56:46,787 [INFO] org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-27 00:56:46,918 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-02-27 00:56:47,176 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-02-27 00:56:47,200 [INFO] org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-27 00:56:48,019 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-27 00:56:48,029 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 00:56:48,807 [INFO] org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46051269, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67baa05, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a47bf0e, org.springframework.security.web.header.HeaderWriterFilter@74a3160d, org.springframework.web.filter.CorsFilter@5b5a89d1, org.springframework.security.web.authentication.logout.LogoutFilter@5f877009, com.jwt.security.jwt.AuthTokenFilter@8e00c02, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f69b0ba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ffe8a82, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@267b678f, org.springframework.security.web.session.SessionManagementFilter@4777f71e, org.springframework.security.web.access.ExceptionTranslationFilter@2a2b3aff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20462820]
+2023-02-27 00:56:49,071 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-27 00:56:49,083 [INFO] com.jwt.JwtApplication [main] Started JwtApplication in 5.233 seconds (JVM running for 6.188)
+2023-02-27 00:57:19,570 [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(9)-127.0.0.1] Application shutdown requested.
+2023-02-27 00:57:19,587 [INFO] org.apache.catalina.core.StandardService [RMI TCP Connection(9)-127.0.0.1] Stopping service [Tomcat]
+2023-02-27 00:57:19,592 [WARN] org.apache.catalina.loader.WebappClassLoaderBase [RMI TCP Connection(9)-127.0.0.1] The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-02-27 00:57:19,598 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(9)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 00:57:19,600 [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(9)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-02-27 00:57:19,604 [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(9)-127.0.0.1] HikariPool-1 - Shutdown completed.
